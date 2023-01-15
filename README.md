@@ -1,2 +1,0 @@
-# noalert
-Not only alert!
