@@ -1,0 +1,14 @@
+groups:
+
+- name: PrometheusRules
+
+  rules:
+
+    - alert: TargetMissing
+      expr: 'up == 0'
+      for: 0m
+      labels:
+        severity: critical
+      annotations:
+        summary: 节点丢失 (instance {{ $labels.instance }})
+        description: "无法获取此节点的监控数据。"
