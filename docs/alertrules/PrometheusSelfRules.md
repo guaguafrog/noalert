@@ -2,10 +2,10 @@
 
 Alert rules designed based on  Prometheus's metrics.   
 
-Alert rule configurations： [Download](www.baidu.com) &nbsp;&nbsp;&nbsp;&nbsp; [GitHub](https://github.com/guaguafrog/noalert) &nbsp;&nbsp;&nbsp;&nbsp; [Gitee](https://gitee.com/aniseed/prometheus-alerts)
+**Alert rule configurations**: &nbsp;&nbsp;&nbsp;&nbsp; [GitHub](https://github.com/guaguafrog/noalert/blob/main/alertrules/PrometheusSelfRules.yml) &nbsp;&nbsp;&nbsp;&nbsp; [Gitee](https://gitee.com/guaguafrog/noalert/blob/main/alertrules/PrometheusSelfRules.yml)
 
-```
-wget xxxxx
+```sh
+wget https://raw.githubusercontent.com/guaguafrog/noalert/main/alertrules/PrometheusSelfRules.yml
 ```
 
 ## 1. TargetDown  
@@ -150,7 +150,7 @@ wget xxxxx
         severity: warning
       annotations:
         summary: Prometheus rule group evaluation slow (Instance:{{ $labels.instance }})
-        description: "The evaluation time of rule group {{ $value }} is too long  "
+        description: "The evaluation time of rule group {{ $value }} is too long"
 ```   
 
 ## 10. PrometheusScrapesSamplesRejected

@@ -1,24 +1,19 @@
 # Node/System alert rules
 
-Alert rules designed based on  Node-Exporter's metrics.   
+Alert rules designed based on  Node_Exporter's metrics.   
 
-Configuration file： &nbsp;&nbsp;&nbsp;&nbsp;[Download](www.baidu.com)&nbsp;&nbsp;&nbsp;&nbsp; [GitHub](www.baidu.com) &nbsp;&nbsp;&nbsp;&nbsp; [Gitee](https://gitee.com/aniseed/prometheus-alerts) 
+**Alert rule configurations**: &nbsp;&nbsp;&nbsp;&nbsp; [GitHub](https://github.com/guaguafrog/noalert/blob/main/alertrules/NodeExporterRules.yml) &nbsp;&nbsp;&nbsp;&nbsp; [Gitee](https://gitee.com/guaguafrog/noalert/blob/main/alertrules/NodeExporterRules.yml)
 
-```
-wget xxxx
+```sh
+wget https://raw.githubusercontent.com/guaguafrog/noalert/main/alertrules/NodeExporterRules.yml
 ```
 
 ## 1. NodeContextSwitchHigh  
-**Description**   
-Average rate of context switching per core.
-
 **Metric**   
-
 - "node_context_switches_total": Total number of context switches.   
   
 **Alert rules**   
-
-```En
+```
     - alert: NodeContextSwitchingHigh
       expr: rate(node_context_switches_total[5m])/count without(mode,cpu) (node_cpu_seconds_total{mode="idle"}) > 1000
       for: 0m

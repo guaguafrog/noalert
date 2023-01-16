@@ -2,13 +2,13 @@
 
 基于Prometheus自身的监控指标设计的告警规则。   
 
-配置文件： [中文版直接下载](www.baidu.com) &nbsp;&nbsp;&nbsp;&nbsp;[英文版直接下载](www.baidu.com) &nbsp;&nbsp;&nbsp;&nbsp; [访问Gitee](https://gitee.com/aniseed/prometheus-alerts) &nbsp;&nbsp;&nbsp;&nbsp; [访问GitHub](www.baidu.com)
+**配置文件**： [GitHub](https://github.com/guaguafrog/noalert/blob/main/alertrules/NodeExporterRules_Zh.yml) &nbsp;&nbsp;&nbsp;&nbsp; [Gitee](https://gitee.com/guaguafrog/noalert/blob/main/alertrules/NodeExporterRules_Zh.yml)
 
 ```
-wget xxxxx
+wget https://raw.githubusercontent.com/guaguafrog/noalert/main/alertrules/NodeExporterRules_Zh.yml
 ```
 ```En
-wget xxxx
+wget https://raw.githubusercontent.com/guaguafrog/noalert/main/alertrules/NodeExporterRules.yml
 ```
 
 ## 1. 监控目标丢失  
@@ -271,7 +271,7 @@ Prometheus规则组的评估持续时间比预定的时间长，它表示存储�
         severity: warning
       annotations:
         summary: Prometheus rule group evaluation slow (Instance:{{ $labels.instance }})
-        description: "The evaluation time of rule group {{ $value }} is too long  "
+        description: "The evaluation time of rule group {{ $value }} is too long"
 ```   
 
 ## 10. Prometheus拒绝异常样本
