@@ -94,7 +94,6 @@ export default defineUserConfig({
           toggleSidebar: '切换侧边栏',
         },
       },
-  
       themePlugins: {
         // only enable git plugin in production mode
         git: isProd,

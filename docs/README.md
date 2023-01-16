@@ -6,8 +6,8 @@ actions:
   - text: Alert Rules
     link: /alertrules/
     type: primary
-  - text: Alert Rules
-    link: /alertrules/
+  - text: Waiting...
+    link: /
     type: secondary
 features:
   - title: 简洁至上
