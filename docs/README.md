@@ -10,10 +10,10 @@ actions:
     link: /
     type: secondary
 features:
-  - title: 简洁至上
-    details: 以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。
-  - title: Vue 驱动
-    details: 享受 Vue 的开发体验，可以在 Markdown 中使用 Vue 组件，又可以使用 Vue 来开发自定义主题。
+  - title: Share
+    details: You share rose get fun. Help each other and grow together.
+  - title: Value
+    details: It is valuable to provide you with a little help.
 
 
 footer: MIT Licensed | Copyright © 2018-present Evan You
