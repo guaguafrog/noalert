@@ -83,7 +83,7 @@ groups:
         severity: warning
       annotations:
         summary: Prometheus规则组评估慢 (Instance:{{ $labels.instance }})
-        description: "规则组{{ $labels.rule_group }}评估持续时间太长"
+        description: "规则组{{ $labels.rule_group }}评估持续时间太长,时间为{{ $value }}"
 
     - alert: PrometheusScrapesSamplesRejected
       expr: increase(prometheus_target_scrapes_sample_duplicate_timestamp_total[5m]) > 0

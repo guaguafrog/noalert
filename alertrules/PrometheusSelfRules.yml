@@ -29,7 +29,7 @@ groups:
         severity: warning
       annotations:
         summary: Prometheus not connected to alertmanager (instance {{ $labels.instance }})
-        description: "Prometheus cannot connect a active alertmanager more than 5 minutes"
+        description: "Prometheus cannot connect a active alertmanager within 5 minutes"
 
     - alert: PrometheusNotificationsDropped
       expr: increase(prometheus_notifications_dropped_total[5m]) > 0
@@ -83,7 +83,7 @@ groups:
         severity: warning
       annotations:
         summary: Prometheus rule group evaluation slow (Instance:{{ $labels.instance }})
-        description: "The evaluation time of rule group {{ $value }} is too long"
+        description: "The evaluation time of rule group({{ $labels.rule_group }}) is too long,value:{{ $value }}"
 
     - alert: PrometheusScrapesSamplesRejected
       expr: increase(prometheus_target_scrapes_sample_duplicate_timestamp_total[5m]) > 0

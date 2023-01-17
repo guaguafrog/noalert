@@ -15,5 +15,5 @@ features:
   - title: 价值
     details: 能给你提供一丝丝的帮助，就有价值的。
 
-footer: MIT Licensed | Copyright © 2018-present Evan You
+footer: MIT Licensed | Copyright © 2022-present Guaguafrog
 ---

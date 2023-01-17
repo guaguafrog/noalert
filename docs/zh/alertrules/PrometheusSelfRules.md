@@ -97,7 +97,7 @@ Prometheus具有热加载配置文件的功能，无需重启prometheus服务。
         severity: warning
       annotations:
         summary: Prometheus not connected to alertmanager (instance {{ $labels.instance }})
-        description: "Prometheus cannot connect a active alertmanager more than 5 minutes"
+        description: "Prometheus cannot connect a active alertmanager within 5 minutes"
 ```
 > 注：若Prometheus无需连接AlertManager，请删除此条告警规则。
 
@@ -261,7 +261,7 @@ Prometheus规则组的评估持续时间比预定的时间长，它表示存储�
         severity: warning
       annotations:
         summary: Prometheus规则组评估慢 (Instance:{{ $labels.instance }})
-        description: "规则组{{ $labels.rule_group }}评估持续时间太长"
+        description: "规则组{{ $labels.rule_group }}评估持续时间太长,时间为{{ $value }}"
 ``` 
 ```En
     - alert: PrometheusRuleGroupEvaluationSlow
@@ -271,7 +271,7 @@ Prometheus规则组的评估持续时间比预定的时间长，它表示存储�
         severity: warning
       annotations:
         summary: Prometheus rule group evaluation slow (Instance:{{ $labels.instance }})
-        description: "The evaluation time of rule group {{ $value }} is too long"
+        description: "The evaluation time of rule group({{ $labels.rule_group }}) is too long,value {{ $value }}"
 ```   
 
 ## 10. Prometheus拒绝异常样本

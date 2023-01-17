@@ -55,7 +55,7 @@ wget https://raw.githubusercontent.com/guaguafrog/noalert/main/alertrules/Promet
         severity: warning
       annotations:
         summary: Prometheus not connected to alertmanager (instance {{ $labels.instance }})
-        description: "Prometheus cannot connect a active alertmanager more than 5 minutes"
+        description: "Prometheus cannot connect a active alertmanager within 5 minutes"
 ```
 
 ## 4. PrometheusNotificationsDropped
@@ -150,7 +150,7 @@ wget https://raw.githubusercontent.com/guaguafrog/noalert/main/alertrules/Promet
         severity: warning
       annotations:
         summary: Prometheus rule group evaluation slow (Instance:{{ $labels.instance }})
-        description: "The evaluation time of rule group {{ $value }} is too long"
+        description: "The evaluation time of rule group({{ $labels.rule_group }}) is too long, value:{{ $value }}"
 ```   
 
 ## 10. PrometheusScrapesSamplesRejected
@@ -206,7 +206,6 @@ wget https://raw.githubusercontent.com/guaguafrog/noalert/main/alertrules/Promet
 - "prometheus_tsdb_compactions_failed_total": Total number of compactions that failed for the partition. 
   
 **Alert Rules**   
-
 
 ```
     - alert: PrometheusTsdbCompactionsFailed

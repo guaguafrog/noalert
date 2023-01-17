@@ -16,5 +16,5 @@ features:
     details: It is valuable to provide you with a little help.
 
 
-footer: MIT Licensed | Copyright © 2018-present Evan You
+footer: MIT Licensed | Copyright © 2022-present Guaguafrog
 ---
