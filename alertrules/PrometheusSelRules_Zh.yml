@@ -163,7 +163,7 @@ groups:
       labels:
         severity: warning
       annotations:
-        summary: AlertManager配置文件重载失败（Instance:{{ $labels.instance }}）
+        summary: AlertManager配置文件重载失败(Instance:{{ $labels.instance }})
         description: "AlertManager的配置文件重新加载失败"
 
 

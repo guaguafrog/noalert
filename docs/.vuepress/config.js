@@ -2,6 +2,7 @@ import { defineUserConfig } from 'vuepress'
 import { defaultTheme } from 'vuepress'
 import { shikiPlugin } from '@vuepress/plugin-shiki'
 import { searchPlugin } from '@vuepress/plugin-search'
+import { gitPlugin } from '@vuepress/plugin-git'
 
 const isProd = process.env.NODE_ENV === 'production'
 
@@ -111,6 +112,11 @@ export default defineUserConfig({
               placeholder: '搜索',
             },
           },
+        }),
+        gitPlugin({
+          createdTime: false,
+          updatedTime: false,
+          contributors: false,
         }),
       ],
 })

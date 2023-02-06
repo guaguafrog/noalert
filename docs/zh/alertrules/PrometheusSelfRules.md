@@ -2,12 +2,12 @@
 
 基于Prometheus自身的监控指标设计的告警规则。   
 
-**配置文件**： [GitHub](https://github.com/guaguafrog/noalert/blob/main/alertrules/NodeExporterRules_Zh.yml) &nbsp;&nbsp;&nbsp;&nbsp; [Gitee](https://gitee.com/guaguafrog/noalert/blob/main/alertrules/NodeExporterRules_Zh.yml)
+**配置文件**： [GitHub](https://github.com/guaguafrog/noalert/blob/main/alertrules/NodeExporterRules_Zh.yml) &nbsp;&nbsp;&nbsp;&nbsp; [Gitee](https://gitee.com/guaguafrog/noalert/blob/main/alertrules/NodeExporterRules_Zh.yml) &nbsp;&nbsp;&nbsp;&nbsp; [GitHub(英文版本)](https://github.com/guaguafrog/noalert/blob/main/alertrules/NodeExporterRules.yml) &nbsp;&nbsp;&nbsp;&nbsp; [Gitee(英文版本)](https://gitee.com/guaguafrog/noalert/blob/main/alertrules/NodeExporterRules.yml)
 
 ```
 wget https://raw.githubusercontent.com/guaguafrog/noalert/main/alertrules/NodeExporterRules_Zh.yml
 ```
-```En
+```英文版本
 wget https://raw.githubusercontent.com/guaguafrog/noalert/main/alertrules/NodeExporterRules.yml
 ```
 
